@@ -14,7 +14,7 @@
 #### Value
 - 0x0001 - 0x00FF
 
-#### example
+### Example
 #### read addr
 - 00 03 40 00 00 01 90 1B
 
@@ -25,7 +25,7 @@
 - 00 06 40 00 00 02 1C 1A
 
 ### Baud Rate Config
-### need restart after setting
+#### !!!need restart after setting!!!
 #### Address
 - 0x2000
 
@@ -38,7 +38,7 @@
 - 0x0005 : 128000
 - 0x0006 : 256000
 
-#### example
+### Example
 #### read baud rate
 - 00 03 20 00 00 01 8E 1B
 

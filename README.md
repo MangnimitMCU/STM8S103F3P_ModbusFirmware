@@ -1,54 +1,41 @@
-# STM8S103F3P_ModbusFirmware
+###STM8S103F3P_ModbusFirmware
  STM8S103F3P_ModbusFirmware
  
- https://github.com/MangnimitMCU/STM8S103F3P_ModbusFirmware/blob/main/1a.jpg
+![1a.jpg](https://github.com/MangnimitMCU/STM8S103F3P_ModbusFirmware/blob/main/1a.jpg)
 
-//-------------------------------
+###Device Address Config
 
-// Device Address Config
-
-//-------------------------------
-
-// -- Address --
+#-- Address --
 
 0x4000
 
-// -- Value --
+#-- Value --
 
 0x0001 - 0x00FF
 
-//-------------------------------
+###example
 
-// example
-
-//-------------------------------
-
-// -- read addr --
+#-- read addr --
 
 00 03 40 00 00 01 90 1B
 
-//set addr 1
+#set addr 1
 
 00 06 40 00 00 01 5C 1B
 
-//set addr 2
+#set addr 2
 
 00 06 40 00 00 02 1C 1A
 
+###Baud Rate Config
 
-//-------------------------------
+#need restart after setting
 
-// Baud Rate Config
-
-// need restart after setting
-
-//-------------------------------
-
-// -- Address --
+#-- Address --
 
 0x2000
 
-// -- Value --
+#-- Value --
 
 0x0000 : 9600
 
@@ -64,40 +51,36 @@
 
 0x0006 : 256000
 
-//-------------------------------
+###example
 
-// example
-
-//-------------------------------
-
-// -- read baud rate --
+#-- read baud rate --
 
 00 03 20 00 00 01 8E 1B
 
-//set baud rate 9600
+#set baud rate 9600
 
 00 06 20 00 00 00 83 DB
 
-//set baud rate 19200
+#set baud rate 19200
 
 00 06 20 00 00 01 42 1B
 
-//set baud rate 38400
+#set baud rate 38400
 
 00 06 20 00 00 02 02 1A
 
-//set baud rate 57600
+#set baud rate 57600
 
 00 06 20 00 00 03 C3 DA
 
-//set baud rate 115200
+#set baud rate 115200
 
 00 06 20 00 00 04 82 18
 
-//set baud rate 128000
+#set baud rate 128000
 
 00 06 20 00 00 05 43 D8
 
-//set baud rate 256000
+#set baud rate 256000
 
 00 06 20 00 00 06 03 D9
